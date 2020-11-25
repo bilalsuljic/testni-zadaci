@@ -1,0 +1,49 @@
+  body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: #003366;
+    margin-bottom: 60px;
+    margin-top: 70px;
+    margin-left: 30px;
+    padding: 10px;
+    }
+
+    .okvir-cw {
+      position: absolute;
+      border-radius: 50%;
+      border: dashed;
+      border-color:black;
+      height: 250px;
+      width: 250px;
+      background: radial-gradient(circle at center,white 65%,transparent 100%),
+                  linear-gradient(to right,red 50%, green 0);
+      animation: spin-clokwise 10s linear infinite;
+  }
+  
+  .okvir-ccw {
+      position: absolute;
+      border-radius: 50%;
+      border: dashed;
+      border-color:black;
+      height: 250px;
+      width: 250px;
+      background: radial-gradient(circle at center,white 65%,transparent 100%),
+                  linear-gradient(to right,red 50%, green 0);
+      animation: spin-counter-clokwise 10s linear infinite;
+  }
+  
+  @keyframes spin-counter-clokwise {
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin-clokwise {
+    100%{
+      transform: rotate(-360deg);
+    }
+  }
+  #p{
+    color: blue;
+  }
+  
